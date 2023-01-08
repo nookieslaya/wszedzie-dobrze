@@ -1,0 +1,9 @@
+.gallery-text-container {
+  display: flex;
+  align-items: center;
+  padding-top: 150px;
+  @media (max-width: 768px) {
+    width: 90%;
+    padding-top: 70px;
+  }
+}

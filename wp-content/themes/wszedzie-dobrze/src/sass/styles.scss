@@ -1,0 +1,36 @@
+@import "/components/nav/nav.scss";
+@import "/components/homepage/slider/slider.scss";
+@import "/components/homepage/about-home/about-home.scss";
+@import "/components/homepage/text-section/text-section.scss";
+@import "/components/homepage/new-projects/new-projects";
+@import "/components/homepage/promo/promo";
+@import "/components/footer/footer.scss";
+@import "/components/gallery-page/gallery.scss";
+@import "/components/gallery-page/gallery-text.scss";
+@import "/components/portfolio-category/portfolio";
+@import "/components/about-me/about-me";
+@import "/components/about-me/about-me-images";
+@import "/components/about-me/about-offer";
+@import "/components/contact/contact";
+@import "/components/offer/offer";
+
+$btn-color: #F2D5BC;
+$btn-bgc: #9C7178;
+$btn-hover: #d2abb2;
+$background:#F2D5BC;
+
+
+body{
+  font-family: 'Raleway', sans-serif;
+}
+div.wpforms-container-full .wpforms-form input.wpforms-field-medium{
+  max-width: 100%!important;
+}
+@font-face {
+  font-family: fancyfont;
+  src: url(../assets/fonts/MoonTime-Regular.ttf);
+}
+
+.fancyfont{
+  font-family: fancyfont;
+}

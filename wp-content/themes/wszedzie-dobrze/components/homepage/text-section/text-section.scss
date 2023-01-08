@@ -1,0 +1,18 @@
+.text__home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #7ba098;
+  margin: 30px 0;
+  color: #fff;
+  strong{
+    font-family: fancyfont;
+    font-size: 30px;
+  }
+  &__text{
+    padding: 60px 0;
+    font-size: 21px;
+    font-weight: normal;
+  }
+}
