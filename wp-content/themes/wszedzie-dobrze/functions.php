@@ -13,8 +13,9 @@ add_action('after_setup_theme', 'wszedzie_theme_support');
 function wszedzie_menus()
 {
     $locations = array(
-        'primary' => "Menu Główne",
-        'footer' => "Menu w stopce"
+        'primary' => "Menu z Lewej strony",
+        'footer' => "Menu w stopce",
+        'secondary' => "Menu z Prawej strony"
     );
     register_nav_menus($locations);
 }

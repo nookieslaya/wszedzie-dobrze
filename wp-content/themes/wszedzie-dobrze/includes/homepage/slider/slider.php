@@ -22,17 +22,18 @@
                 <img class="animated-ico3 animated-ico" src="<?php echo $icon3['sizes']['thumbnails--full']; ?>">
                 <div class="slider__wrapper">
                 <img class="slider-image" src="<?php echo $bg['sizes']['thumbnails--full']; ?>">
+
                 </div>
 
 
             <div class="slider__copy">
-                <h1 class="slider__copy-wrapper">
+                <h2 class="slider__copy-wrapper">
                     <?php the_sub_field('slide__text'); ?>
-                    <br><br>
+                    <br>
                    <p class="fancyfont slider-fancy"><?php the_sub_field('slide__text2'); ?></p>
 
 
-                </h1>
+                </h2>
             </div>
             </div>
             <?php endwhile; ?>

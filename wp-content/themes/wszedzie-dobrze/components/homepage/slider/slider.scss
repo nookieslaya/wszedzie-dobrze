@@ -2,10 +2,10 @@
   display: grid;
   place-items: self-start;
   position: relative;
-  margin-top: 80px;
+  margin-top: 110px;
   z-index: 1;
   padding: 60px 30px;
-  background-color: #F2D5BC;
+  background-color: #889079;
   @media (max-width: 500px) {
     padding: 10px 15px 10px 15px;
   }
@@ -81,7 +81,7 @@ img.slider-image {
   z-index: 999;
   font-size: 40px;
   animation: copy 1s;
-  background-color: #9C7178;
+  background-color: #C6BDB4;
   font-weight: normal;
   @media (max-width: 1260px) {
     left: 10%;

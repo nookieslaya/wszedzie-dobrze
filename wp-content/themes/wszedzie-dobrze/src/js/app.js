@@ -19,3 +19,4 @@ class Default {
 }
 
 new Default().boot();
+

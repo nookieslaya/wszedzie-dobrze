@@ -21,13 +21,13 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'wszedziedobrze' );
+define( 'DB_NAME', 'local' );
 
 /** Database username */
 define( 'DB_USER', 'root' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'mass' );
+define( 'DB_PASSWORD', 'root' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
@@ -37,10 +37,6 @@ define( 'DB_CHARSET', 'utf8' );
 
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
-
-define('WP_HOME','http://wszedzie.local/');
-define('WP_SITEURL','http://wszedzie.local/');
-define( 'FS_METHOD', 'direct' );
 
 /**#@+
  * Authentication unique keys and salts.
@@ -65,6 +61,11 @@ define( 'FS_METHOD', 'direct' );
  */
 $table_prefix = 'wp_';
 
+
+/* Add any custom values between this line and the "stop editing" line. */
+
+
+
 /**
  * For developers: WordPress debugging mode.
  *
@@ -77,12 +78,9 @@ $table_prefix = 'wp_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG',true );
-
-
-/* Add any custom values between this line and the "stop editing" line. */
-
-
+if ( ! defined( 'WP_DEBUG' ) ) {
+	define( 'WP_DEBUG', false );
+}
 
 /* That's all, stop editing! Happy publishing. */
 

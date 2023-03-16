@@ -3,7 +3,7 @@
         <?php $aboutTxt = get_field('about__home__txt'); ?>
         <?php $name = get_field('about__home__name'); ?>
         <?php $link = get_field('about__home__link'); ?>
-    <div class="about__home__images">
+    <div class="about__home__images container">
         <?php while (have_rows('home__about__images')):
             the_row(); ?>
 

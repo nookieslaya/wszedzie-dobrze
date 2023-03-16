@@ -27,10 +27,26 @@ div.wpforms-container-full .wpforms-form input.wpforms-field-medium{
   max-width: 100%!important;
 }
 @font-face {
+  font-family: komoda;
+  src: url(../assets/fonts/Komoda.otf);
+}@font-face {
+  font-family: havana;
+  src: url(../assets/fonts/Havana-Regular.ttf);
+}@font-face {
   font-family: fancyfont;
   src: url(../assets/fonts/MoonTime-Regular.ttf);
+}@font-face {
+  font-family: shopie;
+  src: url(../assets/fonts/Shopie.otf);
 }
 
 .fancyfont{
   font-family: fancyfont;
+}
+.container{
+  max-width: 1200px;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+  color: #e1cfcf;
+  cursor:pointer;
 }

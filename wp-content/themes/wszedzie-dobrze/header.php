@@ -14,42 +14,61 @@
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-    <?php
-    wp_head();
-    ?>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"/>
+	<?php
+	wp_head();
+	?>
 
 </head>
 
 <header>
 
-        <?php
-        if(function_exists("the_custom_logo")){
-            $custom_logo_id = get_theme_mod('custom_logo');
-            $logo = wp_get_attachment_image_src($custom_logo_id);
-        }
+	<?php
+	if ( function_exists( "the_custom_logo" ) ) {
+		$custom_logo_id = get_theme_mod( 'custom_logo' );
+		$logo           = wp_get_attachment_image_src( $custom_logo_id );
+	}
 
-        ?>
-        <div class="logo"><img class="logo-img"src="<?php echo $logo[0] ?>" alt=""></div>
-        <div  class="menu">
-            <div class="btn cancel-btn">
-                <i class="fas fa-times close-btn"></i>
-            </div>
-        <?php
+	?>
+    <div class="logo mobile-logo"><a href="<?php echo home_url(); ?>"><img class="logo-img" src="<?php echo $logo[0]
+            ?>" alt=""></a></div>
+    <div class="menu">
+        <div class="menu-right">
+			<?php
 
-        wp_nav_menu(
-            array(
-                'menu' => 'primary',
-                'container' => '',
-                'theme_location' => 'primary',
-                'items_wrap' => '%3$s'
-            )
-        );
-        ?>
+			wp_nav_menu(
+				array(
+					'menu'           => 'primary',
+					'container'      => '',
+					'theme_location' => 'primary',
+					'items_wrap'     => '%3$s'
+				)
+			);
+			?>
         </div>
 
-        <div class="menu-btn btn">
-            <i class="fas fa-bars menu-btn"></i>
-        </div>
+    <div class="logo"><a href="<?php echo home_url(); ?>"><img class="logo-img" src="<?php echo $logo[0] ?>" alt=""></a></div>
+    <div class="btn cancel-btn">
+        <i class="fas fa-times close-btn"></i>
+    </div>
+    <div class="menu-left">
+		<?php
+
+		wp_nav_menu(
+			array(
+				'menu'           => 'secondary',
+				'container'      => '',
+				'theme_location' => 'secondary',
+				'items_wrap'     => '%3$s'
+			)
+		);
+		?>
+
+    </div>
+    </div>
+
+    <div class="menu-btn btn">
+        <i class="fas fa-bars menu-btn"></i>
+    </div>
 </header>
 

@@ -1,5 +1,5 @@
 <div class="about__images">
-    <div class="about__images-container">
+    <div class="about__images-container container">
         <div class="about__img">
             <?php $photo1 = get_field('about__me__image__1'); ?>
             <img src="<?php echo $photo1['sizes']['large']; ?>" alt=""></div>

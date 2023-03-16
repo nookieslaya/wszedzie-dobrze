@@ -1,5 +1,5 @@
 <?php if (have_rows('gallery__section')): ?>
-<div class="gallery-container">
+<div class="gallery-container container">
     <?php while (have_rows('gallery__section')): the_row(); ?>
 
         <?php get_template_part('includes/gallery-page/gallery-header'); ?>

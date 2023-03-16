@@ -1,6 +1,9 @@
 .projects{
-  width: 90%;
-  margin:0 auto;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
   @media (max-width: 768px) {
     width: 90%;
   }
@@ -51,8 +54,8 @@
 
   }
   .project-btn{
-    background-color: #F2D5BC;
-    color: #9C7178;
+    background-color: #c6bdb4;
+    color: #FFF;
   }
   &__image{
     width: 100%;

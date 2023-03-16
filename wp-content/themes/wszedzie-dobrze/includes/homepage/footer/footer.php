@@ -1,5 +1,5 @@
 
-<div class="footer">
+<div class="footer ">
     <div class="footer__container">
         <div class="footer__left">
             <div class="footer__contact">
@@ -19,6 +19,7 @@
                         <a href="<?php the_sub_field('facebook'); ?>"><i class="fa-brands fa-facebook"></i></a>
                         <a href="<?php the_sub_field('instagram'); ?>"><i class="fa-brands fa-instagram"></i></a>
                     </div>
+
                 <?php endwhile; ?>
             <?php endif; ?>
         </div>

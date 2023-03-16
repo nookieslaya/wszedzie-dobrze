@@ -1,9 +1,11 @@
 .footer{
   width: 100%;
-  margin-top: 100px;
+padding-top:30px;
+  background-color: #e1cfcf;
 
   &__container{
     display: flex;
+    justify-content: center;
     @media(max-width:768px){
     flex-direction: column;
   }
@@ -11,7 +13,8 @@
   &__left,&__right{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    max-width:600px;
+    width: 100%;
     justify-content: center;
     align-items: center;
     @media(max-width:768px){
@@ -31,18 +34,19 @@
     color: white;
   }
   &__contact{
-    background-color: #F2D5BC;
+    background-color: #e1cfcf;
   }
   &__socials{
     color: white;
     text-decoration: none;
-    background-color: #9C7178;
+    background-color: #e1cfcf;
+
   }
   &__logo{
-    background-color: #F2D5BC;
+    background-color: #e1cfcf;
   }
   &__copy{
-    background-color: #9C7178;
+    background-color:#e1cfcf;
   }
 
 }
