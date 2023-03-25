@@ -13,6 +13,7 @@
 @import "/components/about-me/about-offer";
 @import "/components/contact/contact";
 @import "/components/offer/offer";
+@import "/components/products/products";
 
 $btn-color: #F2D5BC;
 $btn-bgc: #9C7178;
@@ -22,6 +23,7 @@ $background:#F2D5BC;
 
 body{
   font-family: 'Raleway', sans-serif;
+  color:#54594a;
 }
 div.wpforms-container-full .wpforms-form input.wpforms-field-medium{
   max-width: 100%!important;
@@ -35,13 +37,21 @@ div.wpforms-container-full .wpforms-form input.wpforms-field-medium{
 }@font-face {
   font-family: fancyfont;
   src: url(../assets/fonts/MoonTime-Regular.ttf);
+}
+
+@font-face {
+  font-family: against;
+  src: url(../assets/fonts/Against.otf);
 }@font-face {
-  font-family: shopie;
-  src: url(../assets/fonts/Shopie.otf);
+  font-family: mightiest;
+  src: url(../assets/fonts/Mightiest.otf);
+}@font-face {
+  font-family: tomatoes;
+  src: url(../assets/fonts/Tomatoes.ttf);
 }
 
 .fancyfont{
-  font-family: fancyfont;
+  font-family: tomatoes;
 }
 .container{
   max-width: 1200px;

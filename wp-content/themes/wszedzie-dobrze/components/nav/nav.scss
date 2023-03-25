@@ -1,43 +1,50 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box
 }
 
-header{
+header {
   z-index: 999;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   display: flex;
- justify-content: center;
+  justify-content: center;
   align-items: center;
   transition: .6s;
   text-decoration: none;
-}
-header.sticky{
-  background-color: #C6BDB4;
-  a{
-    color:#fff;
-  }
-}
-header.sticky a{
-    color:#fff!important;
+
 }
 
-.sub-menu.sticky{
-  background-color: #C6BDB4!important;
-  color:#fff;
+header.sticky {
+  background-color: #C6BDB4;
+
+  a {
+    color: #fff;
+  }
 }
-.menu-item{
+
+header.sticky a {
+  color: #fff !important;
+}
+
+.sub-menu.sticky {
+  background-color: #C6BDB4 !important;
+  color: #fff;
+}
+
+.menu-item {
   position: relative;
 }
 
-.logo img{
+.logo img {
   width: 150px;
   height: auto;
+  z-index: 2;
 }
+
 header .menu {
   display: flex;
   flex-direction: row;
@@ -46,42 +53,48 @@ header .menu {
   max-width: 1200px;
   width: 100%;
   justify-content: space-evenly;
+  z-index: 2;
 }
-.menu-left, .menu-right{
+
+.menu-left, .menu-right {
   display: flex;
   align-items: center;
   max-width: 600px;
   justify-content: space-around;
 }
 
-header .menu a{
+header .menu a {
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
-  color: #000;
+  color: #54594a;
   padding: 9px 15px;
   transition: background-color, color .3s ease;
   width: 100%;
+  z-index: 2;
 }
-header .menu a:hover{
-  color:#000;
-  background-color: #de5959;
 
+header .menu a:hover {
+  color: #000;
 }
-header .btn{
-  color:#fff;
+
+header .btn {
+  color: #fff;
   font-size: 25px;
   display: none;
 }
+
 .sub-menu {
   position: absolute;
-  padding-top: 30px;
+  padding-top: 15px;
+  margin-top: 20px;
   display: none;
-  width: 300px!important;
-  z-index: -1;
-  left: 0;
-  li{
-    list-style: none!important;
+  width: 300px !important;
+  left: -50px;
+  z-index: 1;
+
+  li {
+    list-style: none !important;
     padding: 8px 0;
   }
 }
@@ -93,41 +106,46 @@ header .btn{
   background-color: #fff;
   width: 100%;
 }
-.mobile-logo{
+
+.mobile-logo {
   display: none;
 }
-@media (max-width: 1060px){
+
+@media (max-width: 1060px) {
+  .sub-menu {
+    left: 0;
+    text-align: center;
+  }
   .menu li:hover > ul {
     position: relative;
     right: 0;
   }
-.mobile-logo{
-  display: block;
-
-}
-  header{
+  .mobile-logo {
+    display: block;
+  }
+  header {
     justify-content: space-evenly;
   }
-  .menu-item-has-children{
-    padding:5px 0;
+  .menu-item-has-children {
+    padding: 5px 0;
   }
-  .menu-left, .menu-right{
+  .menu-left, .menu-right {
     flex-direction: column;
-
+    order: 2;
   }
-
   .sub-menu {
     padding-top: 2px;
     z-index: 1;
     transition: .9s;
-    li{
+
+    li {
       text-decoration: none;
       padding: 2px 0;
 
     }
   }
-  header .btn{
-    display:block;
+  header .btn {
+    display: block;
   }
   header .menu {
     position: fixed;
@@ -142,30 +160,32 @@ header .btn{
     align-items: center;
     justify-content: center;
   }
-  header .menu.active{
+  header .menu.active {
     right: 0;
   }
   header .menu ul {
-flex-direction: column;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  header .menu ul li{
+  header .menu ul li {
     padding: 5px 0;
   }
-header .menu .close-btn{
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 25px;
-  cursor:pointer;
-}
-  .fa-bars{
+  header .menu .close-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px;
+    cursor: pointer;
+    font-size: 30px;
+    color: #54594a;
+  }
+  .fa-bars {
     cursor: pointer;
     color: #000;
   }
   header .menu a {
-    display:block;
+    display: block;
     font-size: 20px;
     margin: 10px;
     padding: 5px 15px;

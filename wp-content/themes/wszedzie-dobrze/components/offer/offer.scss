@@ -73,6 +73,9 @@
     &__more {
       padding: 100px 0 20px;
       border-bottom: 2px solid #889079;
+      @media (max-width: 500px) {
+        padding: 60px 0 20px;
+      }
     }
 
     &__icon {
@@ -183,7 +186,7 @@
   &__products {
     display: flex;
     flex-direction: row-reverse;
-    margin-top: 99px;
+    margin-top: 100px;
     width: 100%;
     height: 100%;
     padding: 0 20% 100px;
@@ -206,21 +209,7 @@
         left: -69px;
         @media (max-width: 1200px) {
           max-width: 210px;
-          bottom: 55px;Menu	Edytuj Karuzela obrazków
-        Panel Widgetów
-        Treść
-        Styl
-        Zaawansowane
-        Obraz
-        Wyrównanie pionowe
-        Rozpocznij
-        Wyśrodkowanie
-        Koniec
-        Odstęp
-
-        Własne
-        Odstępy między obrazkami
-
+          bottom: 55px;
           left: -80px;
         }
         @media (max-width: 800px) {
@@ -254,7 +243,6 @@
           font-size: 30px;
         }
         @media (max-width: 500px) {
-          font-size: 25px;
           top: 10px;
         }
       }
