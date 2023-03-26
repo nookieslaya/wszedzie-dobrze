@@ -1,7 +1,11 @@
 .photoproducts {
   margin-top: 100px;
-  display:flex;
+  display: flex;
   justify-content: center;
+  background-color: #f6f2ea;
+  @media (max-width: 1200px) {
+    padding: 20px;
+  }
   &__wrapper {
     display: flex;
     align-items: center;
@@ -9,6 +13,7 @@
     flex-direction: column;
 
   }
+
   &__title {
     &__image {
       position: relative;
@@ -24,6 +29,7 @@
       .image-title {
         font-size: 65px;
         position: absolute;
+        text-transform: uppercase;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -33,7 +39,8 @@
       }
     }
   }
-  &__description{
+
+  &__description {
     background-color: #54594a;
     margin-top: 20px;
     padding: 30px;
@@ -42,49 +49,181 @@
     color: #fff;
     font-size: 19px;
   }
-  &__price{
-    margin-top: 30px;
-    display:flex;
+
+  &__price {
+    margin-top: 50px;
+    display: flex;
     width: 100%;
-    &__image{
+    @media (max-width: 500px) {
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__image {
       flex: 0 0 50%;
-      img{
-        max-width: 600px ;
+
+      img {
+        max-width: 500px;
+        height: auto;
         border: 6px solid #54594a;
         border-radius: 20px;
+        @media (max-width: 1200px) {
+          max-width: 400px;
+        }@media (max-width: 800px) {
+          max-width: 250px;
+        }@media (max-width: 500px) {
+          max-width: 100%;
+        margin-top: 20px;
+        }
       }
     }
-    &__content{
+
+    &__content {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: self-start;
+      align-items: center;
       flex: 0 0 50%;
       font-size: 40px;
-
+      @media (max-width: 1200px) {
+        font-size: 35px;
+      }@media (max-width: 800px) {
+        font-size: 30px;
+      }@media (max-width: 500px) {
+        text-align: center;
+      }
     }
   }
-  &__underPrice{
+
+  &__underPrice {
     display: flex;
     width: 100%;
     margin-top: 50px;
-    &__image{
+    padding-top: 50px;
+    border-top: 2px solid #889079;
+    @media (max-width: 500px) {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &__image {
       flex: 0 0 50%;
-      img{
-        width: 100%;
+      @media (max-width: 500px) {
+        order: 2;
+      }
+      img {
         border: 6px solid #54594a;
-        max-width: 400px;
+        max-width: 500px;
+        height: auto;
         border-radius: 20px;
+        @media (max-width: 1200px) {
+          max-width: 300px;
+        }@media (max-width: 800px) {
+        max-width: 200px;
+      }
+        @media (max-width: 500px) {
+        max-width: 100%;
+      }
       }
     }
-    &__text{
+
+    &__text {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: center;
       flex: 0 0 50%;
       padding: 20px;
       font-size: 29px;
+      }@media (max-width: 800px) {
+      font-size: 25px;
+    }@media (max-width: 500px) {
+      font-size: 19px;
+    }
+
+  }
+
+  &__packing {
+    width: 100%;
+    margin-top: 50px;
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 30px;
+      flex-direction: row-reverse;
+      @media (max-width: 1200px) {
+        justify-content: center;
+      }@media (max-width: 500px) {
+        flex-direction: column;
+      }
+      &__description {
+        z-index: 2;
+        position: relative;
+       left: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex: 0 0 75%;
+        background-color: #d4b3b2;
+        padding: 50px;
+        height: 100%;
+        @media (max-width: 1200px) {
+          flex: 0 0 50%;
+        } @media (max-width: 800px) {
+
+          left:0;
+        padding: 20px 10px;
+        }
+
+        &__title {
+          font-family: tomatoes, sans-serif;
+          text-align: center;
+          font-size: 40px;
+          color:#fff;
+          @media (max-width: 1200px) {
+            font-size: 35px;
+          }@media (max-width: 800px) {
+          font-size: 25px;
+        }
+        }
+        &__text {
+          font-size: 19px;
+          text-align: center;
+        }
+
+      }
+      &__image {
+        flex: 0 0 30%;
+        @media (max-width: 500px) {
+          order:2;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 20px;
+          @media (max-width: 500px) {
+            border-radius: 0;
+          }
+        }
+      }
+
+    }
+    &__secondTxt{
+      font-size: 19px;
+      margin: 30px 0;
+    }
+    &__image2{
+      margin: 30px 0;
+    img{
+      width: 100%;
+      height: auto;
+    }
     }
   }
+
 }

@@ -87,15 +87,21 @@ header .btn {
 .sub-menu {
   position: absolute;
   padding-top: 15px;
-  margin-top: 20px;
+  margin-top: 15px;
   display: none;
   width: 300px !important;
   left: -50px;
   z-index: 1;
-
+  -webkit-box-shadow: 1px 2px 24px -5px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 1px 2px 24px -5px rgba(66, 68, 90, 1);
+  box-shadow: 1px 2px 24px -5px rgba(66, 68, 90, 1);
   li {
     list-style: none !important;
-    padding: 8px 0;
+    padding: 12px 0;
+  }li:hover{
+    border-bottom: 2px solid #889079;
+  scale:1.01;
+  transition: .05s;
   }
 }
 
@@ -115,6 +121,7 @@ header .btn {
   .sub-menu {
     left: 0;
     text-align: center;
+
   }
   .menu li:hover > ul {
     position: relative;
@@ -137,6 +144,9 @@ header .btn {
     padding-top: 2px;
     z-index: 1;
     transition: .9s;
+    -webkit-box-shadow: 1px 2px 24px -5px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 1px 2px 24px -5px rgba(66, 68, 90, 1);
+    box-shadow: 1px 2px 24px -5px rgba(66, 68, 90, 1);
 
     li {
       text-decoration: none;
