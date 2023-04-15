@@ -1,7 +1,7 @@
 <?php
-
-
 function wszedzie_theme_support()
+
+
 {
     add_theme_support('custom-logo');
     add_theme_support('post-thumbnails');
@@ -48,27 +48,4 @@ function wszedzie_register_scripts()
 
 add_action('wp_enqueue_scripts', 'wszedzie_register_scripts');
 
-
-//function post_types()
-//{
-//    register_post_type("sesjeRodzinne", array(
-//        'public' => true,
-//        'labels' => array(
-//            'name' => 'Sesje rodzinne',
-//            'add_new_item' => 'Dodaj nową galerię',
-//            'edit_item' => 'Edytuj galerię',
-//            'all_items' => 'Wszystkie galerie',
-//            'singular_name' => 'Sesja Rodzinna',
-//        ),
-//        'menu_icon' => 'dashicons-camera'
-//
-//    ));
-//}
-//
-//add_action('init', 'post_types');
-
-
-//
-
-?>
 

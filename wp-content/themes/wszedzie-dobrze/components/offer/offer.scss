@@ -149,7 +149,7 @@
 
     &__title {
       color: #889079;
-      font-size: 50px;
+      font-size: 40px;
       padding: 10px 15px;
       text-transform: uppercase;
       @media (max-width: 800px) {
@@ -170,7 +170,7 @@
     &__image {
       z-index: 3;
       border-radius: 5px;
-      flex: 0 0 30%;
+      flex: 0 0 26%;
 
       img {
         width: 100%;

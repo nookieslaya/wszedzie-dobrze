@@ -26,12 +26,9 @@ header.sticky {
   }
 }
 
-header.sticky a {
-  color: #fff !important;
-}
+
 
 .sub-menu.sticky {
-  background-color: #C6BDB4 !important;
   color: #fff;
 }
 
@@ -86,23 +83,27 @@ header .btn {
 
 .sub-menu {
   position: absolute;
-  padding-top: 15px;
   margin-top: 15px;
   display: none;
   width: 300px !important;
-  left: -50px;
   z-index: 1;
-  -webkit-box-shadow: 1px 2px 24px -5px rgba(66, 68, 90, 1);
-  -moz-box-shadow: 1px 2px 24px -5px rgba(66, 68, 90, 1);
-  box-shadow: 1px 2px 24px -5px rgba(66, 68, 90, 1);
   li {
     list-style: none !important;
-    padding: 12px 0;
-  }li:hover{
-    border-bottom: 2px solid #889079;
-  scale:1.01;
-  transition: .05s;
+    padding: 12px 15px;
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.1);
   }
+  li:hover{
+  background-color:rgb(136, 144, 121) ;
+  transition: .05s;
+    border: 1px solid #fff;
+    a{
+      color:#fff!important;
+    }
+  }
+}
+.sub-menu li a {
+  padding: 0;
 }
 
 .menu li:hover > ul {
@@ -144,10 +145,6 @@ header .btn {
     padding-top: 2px;
     z-index: 1;
     transition: .9s;
-    -webkit-box-shadow: 1px 2px 24px -5px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 1px 2px 24px -5px rgba(66, 68, 90, 1);
-    box-shadow: 1px 2px 24px -5px rgba(66, 68, 90, 1);
-
     li {
       text-decoration: none;
       padding: 2px 0;

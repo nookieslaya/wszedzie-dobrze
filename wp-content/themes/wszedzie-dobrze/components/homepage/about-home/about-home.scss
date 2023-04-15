@@ -36,7 +36,7 @@ $background:#E1CFCF;
   }
 }
 .about-text{
-  font-size: 19px;
+  font-size: 23px;
   line-height: 1.5;
   color: #354041;
 
@@ -50,10 +50,10 @@ $background:#E1CFCF;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
+  margin-top: 21px;
   width: 200px;
   height: 50px;
-  background-color: $btn-bgc;
+  background-color: #889079;
   color: white;
   text-align: center;
   text-decoration: none;
@@ -61,7 +61,7 @@ $background:#E1CFCF;
   transition: .3s;
 }
 .about-btn:hover{
-  background-color: $btn-hover;
+  background-color: #9fa88e;
 }
 .about__home__images{
  display: flex;

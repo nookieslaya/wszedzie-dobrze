@@ -1,6 +1,7 @@
 .albums {
   .photoproducts__description p {
     margin-top: 20px;
+
   }
 
   &__description {
@@ -24,23 +25,129 @@
     &__title {
       text-align: center;
       font-size: 40px;
+      margin-right: 120px;
     }
+
     &__table {
       display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      &__left, &__center, &__right{
+
+      &__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      &__wrapperTitle{
+        width: 100%;
+      }
+
+      &__left, &__center, &__right {
         display: flex;
         flex-direction: column;
         align-items: center;
         font-size: 29px;
         margin-top: 20px;
-        p{
-          margin-top: 20px;
+        @media (max-width: 900px) {
+          font-size: 25px;
+          margin-left:20px;
+        } @media (max-width: 500px) {
+          font-size: 19px;
+        }
+
+        p {
+          margin-top: 22px;
+        }
+      }
+
+      &__image {
+        display: flex;
+        justify-content: center;
+        @media (max-width: 800px) {
+         display:none;
+        }
+
+
+        img {
+          width: 60%;
+          height: auto;
+        }
+      }
+
+
+    }
+
+    &__info {
+      margin-top: 50px;
+      width: 100%;
+      font-size: 19px;
+      padding-bottom:30px;
+      border-bottom: 2px solid #889079;
+      @media (max-width: 800px) {
+        margin-left: 20px;
+      }
+    }
+
+    &__ask{
+      margin-top: 30px;
+      font-size: 19px;
+    }
+
+  }
+
+  &__more{
+
+    &__description{
+      background-color: #54594a;
+      margin-top: 20px;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      color: #fff;
+      font-size: 19px;
+    }
+    &__image{
+      position: relative;
+      margin: 30px 0 100px;
+      text-align: center;
+      img{
+        max-width: 400px;
+        height:auto;
+        border-radius: 20px;
+        @media (max-width: 500px) {
+          max-width: 300px;
+        }
+      }
+      &__thanks{
+        position: absolute;
+        font-size: 25px;
+        font-family: tomatoes;
+        rotate: -20deg;
+        right: 185px;
+        bottom:-38px;
+        @media (max-width: 800px) {
+          bottom:-60px;
+        }@media (max-width: 500px) {
+          right:0;
         }
       }
     }
 
   }
-
+}
+.mod-title{
+  font-size: 25px!important;
+  color: #f6f2ea;
+  @media (max-width: 800px) {
+    width: 100%;
+    text-align: center;
+    font-size: 18px!important;
+  }
+}
+.shortcode{
+  margin:40px 0;
+}
+.underPriceMod{
+  @media (max-width: 500px) {
+    font-size: 21px;
+    margin-top: -20px;
+  }
 }

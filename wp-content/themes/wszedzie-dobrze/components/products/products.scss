@@ -27,7 +27,7 @@
       }
 
       .image-title {
-        font-size: 65px;
+        font-size: 55px;
         position: absolute;
         text-transform: uppercase;
         top: 50%;
@@ -41,12 +41,12 @@
   }
 
   &__description {
-    background-color: #54594a;
+    background-color: #889079;
     margin-top: 20px;
     padding: 30px;
     border-radius: 20px;
     text-align: center;
-    color: #fff;
+    color: #F6F2EA;
     font-size: 19px;
   }
 
@@ -168,7 +168,7 @@
         align-items: center;
         flex-direction: column;
         flex: 0 0 75%;
-        background-color: #d4b3b2;
+        background-color: #D4B3B2;
         padding: 50px;
         height: 100%;
         @media (max-width: 1200px) {

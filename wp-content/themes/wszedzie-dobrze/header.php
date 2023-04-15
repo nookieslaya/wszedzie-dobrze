@@ -31,7 +31,7 @@
 
 	?>
     <div class="logo mobile-logo"><a href="<?php echo home_url(); ?>"><img class="logo-img" src="<?php echo $logo[0]
-            ?>" alt=""></a></div>
+			?>" alt=""></a></div>
     <div class="menu">
         <div class="menu-right">
 			<?php
@@ -47,24 +47,25 @@
 			?>
         </div>
 
-    <div class="logo"><a href="<?php echo home_url(); ?>"><img class="logo-img" src="<?php echo $logo[0] ?>" alt=""></a></div>
-    <div class="btn cancel-btn">
-        <i class="fas fa-times close-btn"></i>
-    </div>
-    <div class="menu-left">
-		<?php
+        <div class="logo"><a href="<?php echo home_url(); ?>"><img class="logo-img" src="<?php echo $logo[0] ?>" alt=""></a>
+        </div>
+        <div class="btn cancel-btn">
+            <i class="fas fa-times close-btn"></i>
+        </div>
+        <div class="menu-left">
+			<?php
 
-		wp_nav_menu(
-			array(
-				'menu'           => 'secondary',
-				'container'      => '',
-				'theme_location' => 'secondary',
-				'items_wrap'     => '%3$s'
-			)
-		);
-		?>
+			wp_nav_menu(
+				array(
+					'menu'           => 'secondary',
+					'container'      => '',
+					'theme_location' => 'secondary',
+					'items_wrap'     => '%3$s'
+				)
+			);
+			?>
 
-    </div>
+        </div>
     </div>
 
     <div class="menu-btn btn">

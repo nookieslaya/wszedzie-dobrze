@@ -1,7 +1,8 @@
 .footer{
   width: 100%;
 padding-top:30px;
-  background-color: #e1cfcf;
+  background-color: #fff;
+  border-top: 1px solid #c6bdb4;
 
   &__container{
     display: flex;
@@ -22,31 +23,31 @@ padding-top:30px;
     }
   }
   &__logo img{
-    width: 150px;
+    width: 100px;
     height: auto;
   }
   &__contact, &__copy,&__logo,&__socials{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    height: 50px;
     width: 100%;
-    color: white;
+    font-weight: bold;
+    color: #889079;
   }
   &__contact{
-    background-color: #e1cfcf;
+    background-color: #fff;
   }
   &__socials{
-    color: white;
     text-decoration: none;
-    background-color: #e1cfcf;
+    background-color: #fff;
 
   }
   &__logo{
-    background-color: #e1cfcf;
+    background-color: #fff;
   }
   &__copy{
-    background-color:#e1cfcf;
+    background-color:#fff;
   }
 
 }
@@ -55,6 +56,6 @@ padding-top:30px;
   text-decoration: none;
   font-size: 30px;
   text-decoration: none;
-  color: white;
+  color: #54594a;
   padding: 20px;
 }
